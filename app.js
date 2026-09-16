@@ -111,6 +111,15 @@ gallery.addEventListener("click", e => {
   if (card) openLightbox(+card.dataset.i);
 });
 $("#lbClose").addEventListener("click", () => lb.close());
+const visibleIdx = () => $$(".card:not(.is-hidden)").map(c => +c.dataset.i);
+function stepLightbox(dir) {
+  const list = visibleIdx(); if (!list.length) return;
+  const pos = list.indexOf(lbIndex);
+  openLightbox(list[(pos + dir + list.length) % list.length]);
+}
+$("#lbPrev").addEventListener("click", () => stepLightbox(-1));
+$("#lbNext").addEventListener("click", () => stepLightbox(1));
+lb.addEventListener("keydown", e => { if (e.key === "ArrowRight") stepLightbox(1); if (e.key === "ArrowLeft") stepLightbox(-1); });
 lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
 $("#lbOrder").addEventListener("click", () => {
   lb.close();
@@ -278,9 +287,8 @@ form.addEventListener("change", e => {
 const track = $("#reviewsTrack");
 const reviewHtml = r => `
   <article class="review">
-    <div class="review__src"><i class="${r.src}">${r.src === "wa" ? "✓" : "♡"}</i>${r.who}</div>
+    <div class="review__src"><span><i class="${r.src}">${r.src === "wa" ? "✓" : "♡"}</i>${r.who}</span><b>★★★★★</b></div>
     <p class="review__text">${r.text}</p>
-    <div class="review__foot"><span>Verified customer</span><b>★★★★★</b></div>
   </article>`;
 track.innerHTML = REVIEWS.map(reviewHtml).join("") + REVIEWS.map(reviewHtml).join("");
 

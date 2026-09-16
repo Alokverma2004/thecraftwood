@@ -62,6 +62,12 @@
 
 <!-- Hero -->
 <section class="hero">
+  <svg class="hero__ring" viewBox="0 0 520 520" aria-hidden="true">
+    <circle cx="260" cy="260" r="250" fill="none" stroke="#b97a3c" stroke-width="1.5" opacity=".35"/>
+    <circle cx="260" cy="260" r="205" fill="none" stroke="#b97a3c" stroke-width="1" stroke-dasharray="3 6" opacity=".4"/>
+    <circle cx="260" cy="260" r="150" fill="none" stroke="#b97a3c" stroke-width="1" opacity=".3"/>
+    <circle cx="260" cy="260" r="95" fill="none" stroke="#b97a3c" stroke-width="1" stroke-dasharray="2 5" opacity=".35"/>
+  </svg>
   <div class="container hero__grid">
     <div class="hero__copy reveal">
       <p class="eyebrow"><span class="dot"></span> Verified on Instagram · 5,600+ followers</p>
@@ -70,7 +76,7 @@
         <em>hand-engraved</em> in wood.
       </h1>
       <p class="lead">
-        Send us a photo. We sketch it by hand, engrave it on a natural wood slice and deliver it to your door — with a stand, ready to gift.
+        Send a photo. We sketch it by hand, engrave it on a natural wood slice and deliver it with a stand, ready to gift.
       </p>
       <div class="hero__actions">
         <a href="#order" class="btn btn--primary">Design your piece</a>
@@ -124,7 +130,7 @@
     <div class="section__head reveal">
       <p class="eyebrow">The collection</p>
       <h2 class="display display--md">Every piece is a one-off.<br><em>Yours will be too.</em></h2>
-      <p class="muted">A few recent pieces, straight from our studio. Tap any piece to see it up close, or use it as a starting point for your own.</p>
+      <p class="muted">Tap any piece to see it up close, or use it as a starting point for yours.</p>
     </div>
 
     <div class="filters reveal" role="tablist" aria-label="Filter collection">
@@ -148,7 +154,7 @@
     <div class="section__head reveal">
       <p class="eyebrow">Sizes &amp; pricing</p>
       <h2 class="display display--md">Pick a size. <em>We'll do the rest.</em></h2>
-      <p class="muted">All frames come with a wooden stand, your photo hand-drawn and engraved, and any names, dates or message you like — at no extra cost.</p>
+      <p class="muted">Every frame includes the stand, a hand-drawn portrait and any names, dates or message — at no extra cost.</p>
     </div>
 
     <div class="sizes" id="sizes">
@@ -190,7 +196,7 @@
       </div>
     </div>
 
-    <p class="fineprint">Prices in INR. Stand included with every frame. International shipping calculated at checkout on WhatsApp.</p>
+    <p class="fineprint">Prices in INR, stand included. Shipping confirmed on WhatsApp.</p>
   </div>
 </section>
 
@@ -205,37 +211,42 @@
       <li class="step reveal">
         <span class="step__n">01</span>
         <h3>Send a photo</h3>
-        <p>Tell us the size, occasion and any words you want engraved. A clear, well-lit photo works best.</p>
+        <p>Pick a size, tell us the occasion and any words to engrave.</p>
       </li>
       <li class="step reveal" style="--d:.08s">
         <span class="step__n">02</span>
         <h3>We sketch it</h3>
-        <p>Your photo is turned into a hand-drawn line portrait — every strand of hair, every fold of fabric.</p>
+        <p>Your photo becomes a hand-drawn line portrait, detail by detail.</p>
       </li>
       <li class="step reveal" style="--d:.16s">
         <span class="step__n">03</span>
         <h3>Engraved on wood</h3>
-        <p>Burnt into a natural bark-edged wood slice. No two slices are alike, so no two pieces are either.</p>
+        <p>Burnt into a bark-edged wood slice. No two are alike.</p>
       </li>
       <li class="step reveal" style="--d:.24s">
         <span class="step__n">04</span>
         <h3>Packed &amp; dispatched</h3>
-        <p>Wrapped carefully with its stand and dispatched within 24 hours. Delivered across India and worldwide.</p>
+        <p>Wrapped with its stand and dispatched within 24 hours, worldwide.</p>
       </li>
     </ol>
   </div>
 </section>
 
 <!-- Feature band -->
-<section class="band">
+<section class="band grain">
   <div class="container band__grid">
-    <figure class="band__img reveal">
-      <img src="images/on-stand.jpg" alt="Engraved birthday portrait displayed on its wooden stand" loading="lazy" width="624" height="850">
-    </figure>
+    <div class="band__media reveal">
+      <figure class="band__img">
+        <img src="images/on-stand.jpg" alt="Engraved birthday portrait displayed on its wooden stand" loading="lazy" width="624" height="850">
+      </figure>
+      <figure class="band__aside">
+        <img src="images/teacher-6inch.jpg" alt="Engraved portrait held up against greenery" loading="lazy" width="826" height="890">
+      </figure>
+    </div>
     <div class="band__copy reveal" style="--d:.1s">
       <p class="eyebrow eyebrow--light">Why wood</p>
       <h2 class="display display--md">A photo fades. <em>An engraving doesn't.</em></h2>
-      <p>Printed photos yellow. Screens get replaced. A portrait burnt into wood only gets warmer with age — which is why our customers order them for the moments they never want to forget: the first birthday, the wedding date, the pet who left paw prints on their heart.</p>
+      <p>Printed photos yellow and screens get replaced. A portrait burnt into wood only gets warmer with age — which is why people order them for the moments they never want to forget.</p>
       <ul class="checks">
         <li>Natural bark-edged wood slice</li>
         <li>Hand-drawn, not auto-traced</li>
@@ -253,7 +264,7 @@
     <div class="section__head reveal">
       <p class="eyebrow">Straight from our inbox</p>
       <h2 class="display display--md">What people said <em>when it arrived.</em></h2>
-      <p class="muted">Real messages from customers on WhatsApp and Instagram, shared with their blessing.</p>
+      <p class="muted">Real messages from WhatsApp and Instagram.</p>
     </div>
   </div>
 
@@ -263,23 +274,15 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="reviews__stats reveal">
-      <div><strong>5.6k+</strong><span>Instagram community</span></div>
-      <div><strong>24 hrs</strong><span>Average dispatch</span></div>
-      <div><strong>100%</strong><span>Hand-drawn portraits</span></div>
-      <div><strong>🌍</strong><span>Shipped worldwide</span></div>
-    </div>
-  </div>
 </section>
 
 <!-- Order builder -->
-<section class="section section--dark" id="order">
+<section class="section section--dark grain" id="order">
   <div class="container">
     <div class="section__head section__head--light reveal">
       <p class="eyebrow eyebrow--light">Design your piece</p>
       <h2 class="display display--md">Tell us about it. <em>We'll take it from here.</em></h2>
-      <p>Fill this in and we'll open WhatsApp with your order details ready to send. You can attach your photo in the chat.</p>
+      <p>We'll open WhatsApp with your details ready to send. Attach your photo in the chat.</p>
     </div>
 
     <div class="order">
@@ -363,7 +366,7 @@
           </button>
           <button type="button" class="btn btn--outline-light" id="copyBtn">Copy order details</button>
         </div>
-        <p class="order__hint">You'll be able to attach your photo in the chat. No payment is taken on this site.</p>
+        <p class="order__hint">No payment is taken on this site.</p>
       </form>
 
       <aside class="order__preview reveal" style="--d:.1s" aria-live="polite">
@@ -398,31 +401,27 @@
     <div class="faq__list reveal">
       <details open>
         <summary>What kind of photo should I send?</summary>
-        <p>Any clear photo where faces are visible and well-lit works. Phone photos are perfectly fine. If you're unsure, send two or three and we'll tell you which will engrave best.</p>
+        <p>Any clear, well-lit photo where faces are visible. Phone photos are fine. Unsure? Send a few and we'll pick the one that engraves best.</p>
       </details>
       <details>
         <summary>Can I add names, dates or a quote?</summary>
-        <p>Yes — and it's included in the price. Names, dates, a birthday wish, a line from a song, a small doodle or a hashtag. Larger sizes leave more room for text alongside the portrait.</p>
+        <p>Yes, included in the price. Names, dates, a wish, a lyric, a doodle or a hashtag. Larger sizes leave more room for text.</p>
       </details>
       <details>
         <summary>Which size should I choose?</summary>
-        <p>6″ is our most popular for a single or couple portrait. 7″ gives room for a portrait plus a quote. Go 8″ for family or group photos with three or more people. 5″ is a lovely desk or shelf piece.</p>
+        <p>6″ for a single or couple portrait, 7″ for a portrait plus a quote, 8″ for three or more people. 5″ is a lovely desk piece.</p>
       </details>
       <details>
         <summary>How long does it take?</summary>
-        <p>Every piece is drawn and engraved to order and dispatched within 24 hours of the artwork being finalised. Delivery time then depends on your location — we'll share tracking on WhatsApp.</p>
+        <p>Each piece is made to order and dispatched within 24 hours of the artwork being finalised. We share tracking on WhatsApp.</p>
       </details>
       <details>
         <summary>Do you ship outside India?</summary>
-        <p>Yes, we ship worldwide. Message us with your city and country and we'll confirm the shipping cost before you pay.</p>
-      </details>
-      <details>
-        <summary>Is the stand included?</summary>
-        <p>Every frame ships with a wooden stand, so it's ready to display the moment it's unboxed.</p>
+        <p>Yes, worldwide. Send your city and country and we'll confirm shipping before you pay.</p>
       </details>
       <details>
         <summary>How do I pay?</summary>
-        <p>Orders are confirmed and paid on WhatsApp after we've agreed the design and shipping. Please only pay to the account details shared from our official WhatsApp or Instagram — we never ask for payment anywhere else.</p>
+        <p>On WhatsApp, once the design and shipping are agreed. Only pay to details shared from our official WhatsApp or Instagram.</p>
       </details>
     </div>
   </div>
@@ -435,7 +434,6 @@
       <div class="insta__copy">
         <p class="eyebrow">@_thecraftwood</p>
         <h2 class="display display--md">See what left the studio <em>this week.</em></h2>
-        <p class="muted">New pieces, unboxings and customer stories, posted as they happen.</p>
         <a class="btn btn--dark" href="https://www.instagram.com/_thecraftwood/" target="_blank" rel="noopener">Follow on Instagram</a>
       </div>
       <div class="insta__grid">
@@ -450,11 +448,12 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer grain">
+  <div class="footer__ghost" aria-hidden="true">TheCraftwood</div>
   <div class="container footer__grid">
     <div>
       <span class="brand__name">TheCraftw<span class="brand__heart">♥</span>od</span>
-      <p class="muted">Customised engraved gifts, hand-drawn and burnt into natural wood. Made to order, shipped worldwide.</p>
+      <p class="muted">Hand-drawn portraits, engraved in wood. Made to order, shipped worldwide.</p>
     </div>
     <div>
       <h4>Explore</h4>
@@ -470,7 +469,7 @@
     </div>
   </div>
   <div class="container footer__base">
-    <span>© <span id="year"></span> TheCraftwood. All pieces photographed are real customer orders.</span>
+    <span>© <span id="year"></span> TheCraftwood. Every piece shown is a real customer order.</span>
     <a href="#top">Back to top ↑</a>
   </div>
 </footer>
@@ -483,6 +482,8 @@
 <!-- Lightbox -->
 <dialog class="lightbox" id="lightbox">
   <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous piece">‹</button>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next piece">›</button>
   <div class="lightbox__body">
     <img id="lbImg" src="" alt="">
     <div class="lightbox__meta">
