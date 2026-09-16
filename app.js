@@ -6,7 +6,7 @@
    order button copies the order text and opens Instagram DMs instead.
 ================================================================== */
 const CONFIG = {
-  WHATSAPP_NUMBER: "",                       // e.g. "919876543210"
+  WHATSAPP_NUMBER: "916375137303",           // +91 63751 37303
   INSTAGRAM_URL: "https://www.instagram.com/_thecraftwood/",
   INSTAGRAM_DM: "https://ig.me/m/_thecraftwood",
   PRICES: { "5 Inches": 699, "6 Inches": 799, "7 Inches": 999, "8 Inches": 1199, Keychain: 219 },
